@@ -1,0 +1,49 @@
+h2 {font-family: cursive;}
+#special {font-family: monospace, sans-serif;} /* second font: alternative */
+.class {color: rgb(98, 98, 212);}
+
+.box {
+    font-size: 20px;
+    width: 50vw;
+    height: 50px;
+    margin: 10px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border: 1px dashed white;
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(to right, rgb(35, 35, 35), rgb(8, 8, 84));
+}
+
+.fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 5px;
+    background-color: aliceblue;
+    color: black;
+}
+
+@media screen and (orientation: landscape) {
+  body::after {
+    content: "Landscape";
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body::after {
+    content: "Portrait";
+  }
+}
+
+body {
+    color: aliceblue;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: 10vmax;
+}

@@ -1,0 +1,48 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(228, 228, 228);
+}
+
+.basic_text {
+    color:rgb(18, 25, 31);
+}
+
+:root {
+    --color-1: (255, 255, 255);
+    --color-2: (100, 100, 100)
+    --global-font: Arial, Helvetica, sans-serif
+}
+
+@media screen and (orientation: landscape) {
+    .basic_text::after{
+        content: "imagine using computer lmao";
+    }
+    .secondary-class {
+        color: rgb(0, 67, 150);
+    }
+}
+
+@media screen and (orientation: portrait) {  /* kinda like a if statement(????? */
+    .basic_text::after{
+        content: "imagine using a phone lmao";
+    }
+    .secondary-class {
+        color: rgb(116, 116, 116);
+    }
+}
+
+.box {
+    align-self: center;
+    width: 50vw;
+    background-color: #d7f6ff;
+    background-image: #d7f6ff;
+    outline-color: #58a3b8;
+    outline: 10px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    width: 25%;
+}
